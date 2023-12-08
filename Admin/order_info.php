@@ -105,7 +105,7 @@ if (isset($_GET['orderId'])) {
             $product_info = $stmt_product_info->get_result();
             $product = $product_info->fetch_assoc();
 
-            echo '<td><a href="../NguoiDung/detail_product_logged.php?id=' . $row_order["oProductId"] . '">' . $product['name'] . '</td>';
+            echo '<td><a href="../Khach/detail_productc.php?id=' . $row_order["oProductId"] . '" target="_blank">' . $product['name'] . '</td>';
             echo '<td>' . $row_order['oProductId'] . '</td>';
             echo '<td>' . $product['price'] . '</td>';
             echo '<td>' . $row_order['totalProduct'] . '</td>';

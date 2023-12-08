@@ -55,7 +55,7 @@ if ($conn->connect_error) {
                             <td>" . $row["comment"] . "</td>
                             <td>" . $row["dateComment"] . "</td>
                             <td class='col-3'>
-                                <a href='../NguoiDung/detail_product_logged.php?id=" . $row["rProductId"] . "' class='btn' style='background-color:#FF8C00; color:white;'>Xem chi tiết sản phẩm</a>
+                            <a href='../Khach/detail_product.php?id=" . $row["rProductId"] . " ' target='_blank' class='btn' style='background-color:#FF8C00; color:white;'>Xem chi tiết sản phẩm</a>
                                 <a href='delete_comment.php?id=" . $row["rProductId"] . "&uid=" . $row["rUsername"] . "' class='btn ms-4' style='background-color:#FF8C00; color:white;'>Xóa</a>
                             </td>
                             
